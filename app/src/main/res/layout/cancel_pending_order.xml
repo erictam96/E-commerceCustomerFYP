@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cancel_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/cancel_reason"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line_below_photo"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@id/cancel_label"
+        android:layout_alignStart="@id/cancel_label"
+        android:layout_below="@+id/cancel_label"
+        android:background="@color/colorLightGray" />
+
+    <RadioGroup
+        android:id="@+id/radio_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel_label"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mislick/ Wrong order" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picture not match with description" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="other" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="start"
+        android:hint="@string/writereason"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLength="150"
+        android:maxLines="4"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txtwordcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cancel_text"
+        android:layout_below="@+id/cancel_text" />
+
+    <LinearLayout
+        android:id="@+id/linearbtn"
+        android:layout_below="@id/txtwordcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/pending_cancel_but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/scarletRed"
+            android:text="@string/cancel"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/pending_cancel_submit_but"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:text="@string/submit"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

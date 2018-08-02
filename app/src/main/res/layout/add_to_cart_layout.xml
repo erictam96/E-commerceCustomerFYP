@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@color/transparentWhite"
+
+    >
+    <View
+        android:id="@+id/trasnparentBackground"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparentWhite"
+
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1">
+    <ImageView
+
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/itemDetailImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/photo" />
+
+    <TextView
+
+        android:id="@+id/itemDetailDiscountedPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/itemDetailImage"
+        android:layout_marginTop="20dp"
+        android:text="RM XXX "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/Red"/>
+
+    <TextView
+
+        android:id="@+id/itemDetailDiscountPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/itemDetailImage"
+        android:background="@drawable/red_circle"
+android:padding="3dp"
+        android:text="-XX% off "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/White"
+        android:layout_below="@+id/itemDetailDiscountedPriceText"/>
+    <TextView
+
+        android:id="@+id/itemDetailPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/itemDetailDiscountPriceText"
+
+        android:text="RM XXX "
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/darkerGrey"
+        android:layout_below="@+id/itemDetailDiscountedPriceText"/>
+
+    <TextView
+        android:id="@+id/itemDetailQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/itemDetailImage"
+        android:layout_below="@id/itemDetailDiscountPriceText"
+
+        android:text="@string/stock"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/itemDetailQuantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/itemDetailQuantityLabel"
+        android:layout_below="@id/itemDetailDiscountPriceText"
+        android:text="14unit"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <View
+        android:id="@+id/lineBelowImage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@+id/itemDetailImage"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/variationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_below="@id/lineBelowImage"
+
+        android:text="@string/itemvariant"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/variationLabel"
+        android:layout_above="@+id/lineBelowRecycleView"
+        android:layout_alignStart="@+id/variationLabel"
+        android:layout_marginEnd="15dp">
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerviewItemVariation"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    </ScrollView>
+    <View
+        android:id="@+id/lineBelowRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_above="@+id/quantityOrderLinearLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray" />
+    <TextView
+        android:id="@+id/itemOrderquantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+
+android:layout_marginBottom="20dp"
+        android:layout_above="@id/lineBelowQuantityOrder"
+
+        android:text="@string/qty2"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+    <LinearLayout
+        android:id="@+id/quantityOrderLinearLayout"
+
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/itemOrderquantityLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/lineBelowQuantityOrder"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:id="@+id/buttondecreaseQtyBut"
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="-" />
+        <TextView
+            android:id="@+id/selectedQuantity"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+           android:textAlignment="center"
+            android:text="1"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/increaseQtyBut"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="+" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/lineBelowQuantityOrder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_above="@+id/checkoutLinear"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/darker_gray" />
+<LinearLayout
+    android:id="@+id/checkoutLinear"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/confirmAddToCart"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:text="@string/addtocart"
+        android:backgroundTint="@color/orange"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/checkoutNowButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+       android:text="@string/checkout"
+        android:layout_weight="1"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/scarletRed"/>
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/closeItemDetailBut"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparentWhite"
+        app:srcCompat="@drawable/ic_close_black_48dp" />
+</RelativeLayout>
+    </RelativeLayout>
+

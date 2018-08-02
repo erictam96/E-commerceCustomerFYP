@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#1246ff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Red">#ff0000</color>
+    <color name="White">#ffffff</color>
+    <color name="SemiTransparentWhite">#b9ffffff</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="noteDescriptionTextColor">#57a6f0</color>
+    <color name="titleTextColor">#D9141627</color>
+    <color name="descriptionTextColor">#A8A8A8</color>
+    <color name="commentTextColor">#000000</color>
+    <color name="hintTextColor">#55000000</color>
+    <color name="commentbackground">#f4f4f4</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="gold">#d0ffe039</color>
+    <color name="scrollviewGrey">#71e6e6e6</color>
+    <color name="darkTransparentBlack">#ca000000</color>
+    <color name="transparentWhite">#00ffffff</color>
+    <color name="orange">#F9812A</color>
+    <color name="darkerGrey">#787878</color>
+    <color name="scarletRed">#e91e02</color>
+    <color name="cashierbookBlue">#2a68e4</color>
+    <color name="lightgreen">#00ff00</color>
+    <color name="light_grey">#efeff9</color>
+    <color name="lightSkyBlue">#e8f2ff</color>
+    <color name="colorFriends">#4db8ff</color>
+</resources>

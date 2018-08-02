@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardaddressChkbox"
+        android:layout_centerVertical="true"
+        android:paddingRight="5dp"/>
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cardfullnameText"
+                android:layout_alignBottom="@id/cardfullnameText"
+                android:text="emailText"
+                android:id="@+id/cardemailText"
+                android:layout_marginLeft="2dp"
+
+                />
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cardaddressChkbox"
+
+                android:text="fullnameText"
+                android:id="@+id/cardfullnameText"
+                />
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cardaddressChkbox"
+                android:layout_below="@id/cardfullnameText"
+                android:text="contactText"
+                android:id="@+id/cardcontactText"
+                />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_below="@id/cardcontactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addresstext"
+        android:layout_toRightOf="@+id/cardaddressChkbox"
+        android:id="@+id/cardaddressText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardaddressChkbox"
+        android:layout_below="@id/cardaddressText"
+        android:text="stateText"
+        android:id="@+id/cardstateText"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardaddressChkbox"
+        android:layout_below="@id/cardstateText"
+        android:text="cityText"
+        android:id="@+id/cardcityText"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardcityText"
+        android:layout_below="@id/cardstateText"
+        android:text="postcodeText"
+        android:id="@+id/cardpostcodeText"
+        android:layout_marginLeft="2dp"
+        />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

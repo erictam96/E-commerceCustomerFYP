@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewFriends">
+
+    <RelativeLayout
+        android:id="@+id/rlFriendsMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/viewfriendstoolbar"
+            layout="@layout/default_toolbar"/>
+        <RelativeLayout
+            android:id="@+id/rlFriends1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewfriendstoolbar">
+            <TextView
+                android:id="@+id/txtFriend1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friendrequest"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/cashierbookBlue"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvFriendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/White"
+                android:layout_below="@+id/txtFriend1"/>
+
+            <TextView
+                android:id="@+id/txtNoReq"
+                android:text="@string/nofriendreq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFriend1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlFriends1"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/txtFriend3"
+                android:text="@string/availablefriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/White"
+                android:background="@color/cashierbookBlue"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvAvailableFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/White"
+                android:layout_below="@+id/txtFriend3"/>
+
+            <TextView
+                android:id="@+id/txtNoAvai"
+                android:text="@string/nofriendavailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFriend3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

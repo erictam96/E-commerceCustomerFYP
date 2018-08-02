@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ecommerce.customer.fypproject.FeedbackActivity">
+
+<RelativeLayout
+    android:id="@+id/feedbacklayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/feebacktoolbar"
+        layout="@layout/default_toolbar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/feebacktoolbar"
+        tools:context="com.ecommerce.customer.fypproject.FeedbackActivity">
+
+        <ImageView
+            android:id="@+id/imageFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/feedback"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="184dp"
+            android:text="@string/category3"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:entries="@array/feedback_array" />
+
+        <EditText
+            android:id="@+id/edtFeedDesc"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/textView33"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/writeSmthg"
+            android:inputType="textMultiLine"
+            android:maxLength="300"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/edtFeedDesc"
+            android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnFeedSubmit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:text="@string/submit"
+            android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="19dp"
+            android:text="@string/desc"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtFeedDesc"
+            android:layout_alignParentEnd="true"
+            android:text="" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
+

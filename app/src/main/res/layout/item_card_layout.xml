@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/itemCardPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/itemCardImage"
+                android:text="100%"
+                android:textSize="20sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:background="@drawable/red_circle"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+
+            />
+            <ImageView
+                android:id="@+id/itemCardImage"
+                android:layout_width="fill_parent"
+                android:layout_height="165dp"
+                android:layout_margin="7dp"
+                android:src="@drawable/photo"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/itemCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@id/itemCardImage"
+
+                android:text="Title"
+                android:textColor="#000"
+                android:textSize="15sp"
+
+                android:lines="1"
+                android:maxLines="2"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/discountedCardPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtTitle"
+                android:layout_alignStart="@+id/txtTitle"
+                android:layout_below="@+id/itemCardTitle"
+                android:text="discounted Price"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                 />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/itemCardPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discountedCardPrice"
+                android:text="ori Price"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/itemCardSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemCardPrice"
+                android:text="Seller"
+                android:layout_marginBottom="5dp"
+                 />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>

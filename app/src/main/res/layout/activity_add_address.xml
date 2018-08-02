@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecommerce.customer.fypproject.AddAddressActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/addAddressToolbar"
+            layout="@layout/default_toolbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:layout_below="@+id/addAddressToolbar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:id="@+id/addressLabel"
+            />
+
+        <EditText
+            android:id="@+id/addressText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/postcodeText"
+            android:layout_below="@+id/addAddressToolbar"
+            android:layout_toRightOf="@+id/addressLabel"
+            android:hint="No.xx/block xx, street xxx"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="15sp" />
+
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/addressLabel"
+            android:id="@+id/line_below_address"
+            
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_address"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="State: "
+            android:id="@+id/stateLabel"
+            />
+
+        <EditText
+            android:id="@+id/stateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/postcodeText"
+            android:layout_below="@+id/line_below_address"
+            android:layout_toRightOf="@+id/stateLabel"
+            android:hint="enter state"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="15sp" />
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/stateLabel"
+            android:id="@+id/line_below_state"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_state"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="City: "
+            android:id="@+id/cityLabel"
+            />
+
+        <EditText
+            android:id="@+id/cityText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/postcodeText"
+            android:layout_below="@+id/line_below_state"
+            android:layout_toRightOf="@+id/cityLabel"
+            android:hint="enter city "
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="15sp" />
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/cityLabel"
+            android:id="@+id/line_below_city"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_city"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="PostCode: "
+            android:id="@+id/postcodeLabel"
+            />
+        <View android:layout_height="10dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/postcodeLabel"
+            android:id="@+id/line_below_postcode"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/postcodeLabel"
+            android:layout_below="@+id/line_below_city"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:id="@+id/postcodeText"
+            android:hint="enter postcode"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_postcode"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="Email: "
+            android:id="@+id/emailLabel"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emailLabel"
+            android:layout_below="@+id/line_below_postcode"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailText"
+            android:layout_alignStart="@+id/contactText"
+            android:hint="blank will fill in default user email"/>
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/emailLabel"
+            android:id="@+id/line_below_email"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_email"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="Full Name: "
+            android:id="@+id/fullNameLabel"
+            
+            />
+
+        <EditText
+            android:id="@+id/fullNameText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/contactText"
+            android:layout_below="@+id/line_below_email"
+            android:layout_toRightOf="@+id/fullNameLabel"
+            android:hint="receipient full name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textSize="15sp" />
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/fullNameLabel"
+            android:id="@+id/line_below_fullname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_fullname"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:text="Contact No: "
+            android:id="@+id/contactLabel"
+
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/contactLabel"
+            android:layout_below="@+id/line_below_fullname"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:id="@+id/contactText"
+            android:hint="receipient contact"
+            />
+        <View android:layout_height="10dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/contactLabel"
+            android:id="@+id/line_below_contact"
+            />
+
+        <Switch
+            android:id="@+id/defaultAddressSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/line_below_contact"
+            android:text="Set to default custom address" />
+
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/defaultAddressSwitch"
+            android:id="@+id/line_below_switch"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitAddressButton"
+            android:text="add address"
+            android:layout_below="@+id/line_below_switch"
+
+            android:backgroundTint="@color/orange"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/White"/>
+    </RelativeLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

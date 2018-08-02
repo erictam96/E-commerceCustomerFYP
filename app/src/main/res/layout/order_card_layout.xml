@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ordernumber"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/orderLabel"
+                android:layout_margin="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXXXXXXX"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/orderText"
+                android:layout_margin="8dp"
+                android:layout_toRightOf="@id/orderLabel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/readyToCollect"
+                android:textSize="16sp"
+
+                android:id="@+id/notifyLabel"
+                android:layout_margin="8dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/lightgreen"/>
+            <View
+                android:id="@+id/lineBelowOrderLabel"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/orderLabel"
+                android:background="@color/orange"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/lineBelowOrderLabel"
+                android:id="@+id/doneImg"
+                android:src="@mipmap/ic_done"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/readyToCollect2"
+                android:textSize="16sp"
+                android:layout_below="@+id/lineBelowOrderLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/deliverdLabel"
+                android:layout_toRightOf="@id/doneImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X item ready to collect"
+                android:textSize="16sp"
+                android:layout_below="@+id/lineBelowOrderLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rdyCollectItemText"
+                android:layout_toRightOf="@id/deliverdLabel"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_checklist"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/doneImg"
+                android:layout_alignStart="@id/doneImg"
+                android:id="@+id/totalitemImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalitemImg"
+                android:text="@string/totalitem"
+                android:layout_below="@+id/doneImg"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:id="@+id/totalitemLabel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/totalitemLabel"
+                android:text="X item"
+                android:layout_below="@+id/doneImg"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:id="@+id/totalItemText"/>
+            <View
+                android:id="@+id/lineBelowTotalItemLabel"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/totalitemImg"
+                android:background="@color/colorLightGray"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orderdate"
+                android:layout_below="@+id/lineBelowTotalItemLabel"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/orderDateLabel"
+                android:paddingBottom="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineBelowTotalItemLabel"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/orderDateLabel"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="xx-xx-xxxx"
+                android:id="@+id/orderdateText"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

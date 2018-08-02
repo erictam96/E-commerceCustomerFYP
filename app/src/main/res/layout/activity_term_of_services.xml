@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermOfServicesActivity">
+    <include
+        android:id="@+id/termServiceToolbar"
+        layout="@layout/default_toolbar"/>
+    <ScrollView
+        android:layout_below="@+id/termServiceToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashierbook Mobile Commerce App’s Products and Service Terms and Conditions"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+
+                android:text="Cashierbook is a mobile commerce app company situated at TARC Incubator at Tunku
+Abdul Rahman University College (TAR UC). Cashierbook promotes mobile commerce services
+for Wangsa Walk Mall (WWM) tenants to the TAR UC communities (are referred to as buyers).
+Cashierbook company fully owns the intellectual property rights of the Cashierbook system. This
+letter is to notify the sellers on the Cashierbook Mobile Commerce App’s Product and Service
+Terms and Conditions, charges and rates that incur to the sellers (are referred to as Wangsa Walk
+Mall (WWM) tenants or retailers) as sellers register with the Cashierbook. One of the key strengths
+of Cashierbook system is its integrated data privacy mechanism and most trusted and secured
+iPay88 payment gateway from iPay88 (M) Sdn Bhd to ensure buyers’ and sellers’ (WWM retailers
+in this context) payment information to the highest level."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Cashierbook Mobile Commerce App’s Products and Service Terms and Conditions"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+
+                android:text="
+1. On the Cashierbook Mobile Commerce’s payment management, all buyers can pay their
+purchases using either bank transfer, PayPal, credit card or debit card through iPay88
+payment gateway service. Sellers will absorb the online payment transaction charge of 1%
+for every transaction’s amount. This is the transaction processing charges imposed by
+iPay88.
+\n\n
+2. The item’s drop off point at Wangsa Walk Mall is determined by MCL Land (Malaysia)
+Sdn. Bhd. When the purchased item reach TAR UC, the item’s drop off point at Canteen 2
+(Yum Yum Cafeteria). At the beginning of the project, we will schedule one trip per day
+at 4pm leaving from Wangsa Walk Mall to reach at TAR UC about 4:15pm. Delivery
+schedule will be revised from time to time based on the transaction volume and needs.
+\n\n
+3. Payment settlement turnaround time from iPay88 to the sellers will be on the following
+Friday of the week or on a 10-day turn-around time according to iPay88 payment
+settlement Standard Operating Procedure (SOP). E.g. The payment from the buyers to the
+sellers for this Monday until Friday will be settled to the sellers’ bank account by next
+Friday.
+\n\n
+4. The sellers of Cashierbook system are solely responsible for any actions that they
+performed on the Cashierbook system according to the Malaysian law. Cashierbook
+company will not be liable for any illegal activities performed by the sellers in the
+Cashierbook system.
+\n\n
+5. For items listed in the Cashierbook system, when buyer make a purchase of the listed item,
+Cashierbook company will charge an administration fee of 1% of the total listed price
+posted by the sellers. On the delivery services, a delivery charge of RM3 per item will be
+imposed on the buyers.
+\n\n
+6. All items’ size is limit to no more than “A4” size and should be weight less than 2kg. Any
+items that are more than “A4” and weight more than 2kg will be charged on a case-to-case
+basis for the transporting fee. Sellers are required to indicate on the Cashierbook Mobile
+App.
+"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delivery_table"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+
+                android:text="
+\n\n7. In case of buyer wants to return any items to the item’s sellers, buyer need to return the
+purchased items to the respective seller’s physical shop at WWM by themselves without
+going through Cashierbook system. Cashierbook system will not process any transaction
+and activity related to the return item event.
+\n\n
+8. Cashierbook company reserved the right to ban the sellers or remove any items posted by
+the sellers at any given time without further reference to the WWM tenants and buyers if
+the sellers are found to have violated regulations of WWM and Laws of Malaysia.
+\n\n
+9. Cashierbook company reserved the right to reject any item(s) in the buyer’s order if the
+sellers cannot deliver the buyer’s requested item(s) to the WWM’s Cashierbook item
+collection (pick-up) counter within the time frame that specified by the Cashierbook
+system.
+\n\n
+10. Cashierbook company reserved the rights to review and change the mentioned terms and
+conditions in this letter at any given time and conditions without further reference to the
+WWM tenants and buyers.
+\n\n
+11. Retailer need to reply confirmation of availability of stock and item to pack for delivery
+within the day of order through the Cashierbook system.
+\n\n
+12. If buyer had made his or her payment after purchased item at Cashierbook system and then
+WWM tenants cancel order due to any reason. Hence, WWM tenants will absorb the
+transaction fee lost occurred from the buyer’s transaction.
+\n\n
+13. WWM tenants needs to provide complete and correct company information such as
+company registration from Suruhanjaya Syarikat Malaysia (SSM), company’s bank
+account and other relevant information to Cashierbook company for merchant registration.
+\n\n
+14. WWM tenants and buyers agreed to authorize WWM management and Cashierbook
+company to view and use the data from Cashierbook system.
+\n\n
+Cashierbook team looks forward to work together with you to bring your business’s sales
+performance to the next level with Cashierbook’s services."/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

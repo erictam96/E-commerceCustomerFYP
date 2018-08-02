@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="16sp"
+        android:id="@+id/cancelDialogText"
+        android:text="@string/cancelDialogMsg"
+        android:textColor="@color/titleTextColor"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelHelpYes"
+        android:layout_below="@+id/cancelDialogText"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/White"
+        android:id="@+id/cancelHelpBut"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noTQ"
+        android:layout_below="@+id/cancelDialogText"
+        android:layout_margin="30dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/cancelCloseBut"/>
+
+</RelativeLayout>

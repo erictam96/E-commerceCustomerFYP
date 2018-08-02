@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/user_icon"
+        android:id="@+id/userPic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/userPic"
+        android:layout_marginTop="15dp"
+        android:text="user001"
+        android:textSize="16sp"
+        android:id="@+id/userName"
+        android:textColor="@color/darkTransparentBlack"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_star"
+        android:layout_below="@+id/userName"
+        android:layout_toEndOf="@+id/userPic"
+        android:id="@+id/star"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_toEndOf="@+id/star"
+        android:text="5.0"
+        android:id="@+id/starCount"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentDate"
+        android:text="on xx-xx-xxxx"
+        android:layout_below="@+id/userName"
+        android:layout_toEndOf="@+id/starCount"
+        android:layout_marginStart="10dp"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/star"
+        android:layout_toEndOf="@+id/userPic"
+        android:id="@+id/prodvariant"
+        android:text="asdasd grey"
+        android:textColor="@color/orange"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodvariant"
+        android:layout_toEndOf="@+id/userPic"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20dp"
+        android:id="@+id/feedbackText"
+        android:textColor="@color/darkTransparentBlack"
+        android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdsadsadadadasdasdsadasdasdasdasdasdasdasdasdasdasdas"/>
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_below="@+id/feedbackText"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

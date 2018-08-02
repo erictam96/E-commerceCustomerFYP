@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecommerce.customer.fypproject.ShoppingCartActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line_below_shopping_cart_reycleview"
+            android:id="@+id/cartRefresh">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shoppingCartRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <View
+            android:id="@+id/line_below_shopping_cart_reycleview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorLightGray"
+
+
+            android:layout_above="@id/cartManageBar"/>
+        <RelativeLayout
+            android:id="@+id/cartManageBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/finalChkOutBtn">
+            <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shopCartSelectAllChkBox"
+            android:layout_margin="10dp"
+           />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+                android:text="@string/selectall"
+                android:layout_toRightOf="@id/shopCartSelectAllChkBox"
+
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subTotalLabel"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/subTotal"
+                android:text="@string/subtotal"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subTotal"
+                android:layout_centerVertical="true"
+                android:text="RM0.00"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkstockavl"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/orange"
+
+            android:textSize="18sp"
+            android:id="@+id/finalChkOutBtn"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyList"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/shopCartEmptyText"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/shopCartEmptyText"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/shopCartEmptyImg"
+            android:src="@mipmap/ic_empty"
+            android:visibility="invisible"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

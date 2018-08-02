@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="target_array">
+        <item>Appliance</item>
+        <item>Automotive</item>
+        <item>Bags</item>
+        <item>Health Beauty</item>
+        <item>Book Stationery</item>
+        <item>Electronics</item>
+        <item>Food Drink</item>
+        <item>Furniture</item>
+        <item>Jewelry</item>
+        <item>Men's Fashion</item>
+        <item>Mobile Tablets</item>
+        <item>Sport</item>
+        <item>Shoe</item>
+        <item>Ticket Voucher</item>
+        <item>Video Gaming</item>>
+        <item>Watches</item>
+        <item>Women's Fashion</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>All Categories</item>
+        <item>Appliance</item>
+        <item>Automotive</item>
+        <item>Bags</item>
+        <item>Health Beauty</item>
+        <item>Book Stationery</item>
+        <item>Electronics</item>
+        <item>Food Drink</item>
+        <item>Furniture</item>
+        <item>Jewelry</item>
+        <item>Men's Fashion</item>
+        <item>Mobile Tablets</item>
+        <item>Sport</item>
+        <item>Shoe</item>
+        <item>Ticket Voucher</item>
+        <item>Video Gaming</item>>
+        <item>Watches</item>
+        <item>Women's Fashion</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="select_array">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Remove</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="select_arraywithoutRemove">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Cancel</item>
+
+    </string-array>
+
+    <string-array name="condition_array1">
+        <item>All</item>
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string-array name="feedback_array">
+        <item>General Feedback</item>
+        <item>UI Feedback</item>
+        <item>Faulty Issue</item>
+        <item>Spam or Abuse</item>
+    </string-array>
+
+</resources>

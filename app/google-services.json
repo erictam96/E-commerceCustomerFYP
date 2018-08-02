@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12222806775",
+    "firebase_url": "https://e-commerce-fyp.firebaseio.com",
+    "project_id": "e-commerce-fyp",
+    "storage_bucket": "e-commerce-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12222806775:android:301ebf9a77bcd3c6",
+        "android_client_info": {
+          "package_name": "com.ecommerce.customer.fypproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12222806775-i6j6d6ocjin4daci60vvl4hfsnukv1h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7ST-oDuwVHZQ_-zIh9IR03KbEr-Q4FEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

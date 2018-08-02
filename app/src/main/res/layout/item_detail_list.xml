@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemModelName"
+            android:textAllCaps="false"
+            android:text="variety product"
+            android:focusable="true"
+            android:clickable="true"
+            />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

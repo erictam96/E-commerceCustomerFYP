@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageOrderActivity">
+    <include
+        android:id="@+id/manageOrderToolbar"
+        layout="@layout/default_toolbar"/>
+    <RelativeLayout
+        android:layout_below="@id/manageOrderToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/manageOrderRelative">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="20dp"
+            android:id="@+id/QRcodeImg"
+            android:src="@drawable/cashierbook_qr"
+            android:autofillHints="not available yet"
+            android:layout_marginBottom="10dp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemList"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="18sp"
+            android:background="@color/orange"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_below="@+id/QRcodeImg"
+            android:id="@+id/itemListLabel"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/itemListLabel"
+            android:id="@+id/recycleManageOrder"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/manageOrderToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emptyManageOrderRelative"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emptyList"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/manageOrderEmptyText"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/manageOrderEmptyText"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_empty"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

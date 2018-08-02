@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orderedItem"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/titleTextColor"
+        android:id="@+id/orderheader"
+        />
+    <View android:layout_height="1dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/orderheader"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderheader"
+        android:text="asdasdasdas"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:id="@+id/orderDialogItemText"/>
+
+    <ImageView
+        android:id="@+id/orderDialogQuestion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:contentDescription="Dialog Question"
+        android:src="@mipmap/ic_help" />
+
+    <View android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/orderDialogItemText"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orderedItemText"
+        android:textAlignment="center"
+        android:layout_below="@+id/orderDialogItemText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/orderDialogAnswer"
+        android:background="@color/light_grey"
+        android:textColor="@color/titleTextColor"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_below="@+id/orderDialogAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/orderDialogOKBut"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/White"
+        />
+
+
+</RelativeLayout>

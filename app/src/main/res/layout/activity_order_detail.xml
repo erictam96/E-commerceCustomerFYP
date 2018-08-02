@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/orderToReceiveToolbar"
+            layout="@layout/default_toolbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clickexpand"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/orderToReceiveToolbar"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QRcodeImg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/orange"
+            android:padding="10dp"
+
+            android:id="@+id/linearlabel"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="16sp"
+                android:text="@string/itemname"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textSize="16sp"
+                android:text="@string/qty"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textSize="16sp"
+                android:text="@string/variant"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textSize="16sp"
+                android:text="@string/status"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearlabel"
+            android:id="@+id/recycleOrderToReceive"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/remindmsg"
+            android:background="@color/White"
+android:paddingTop="5dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelreminder"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/scarletRed"
+            android:id="@+id/remindmsg"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

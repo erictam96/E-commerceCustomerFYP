@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutItemActivity">
+
+    <include
+        android:id="@+id/checkoutToolbar"
+        layout="@layout/default_toolbar"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chkoutRefresh"
+        android:layout_above="@+id/line_below_pay_reycleview"
+        android:layout_below="@+id/checkoutToolbar">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:id="@+id/chkoutRecycleView"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/emptyList"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:id="@+id/checkoutEmptyText"
+    android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkoutEmptyText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/checkoutEmptyImg"
+        android:src="@mipmap/ic_empty"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/line_below_pay_reycleview"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_above="@+id/payAllRelative"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/payNowButton"
+        android:id="@+id/payAllRelative">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/payAllChkBox"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/selectall"
+                android:layout_toRightOf="@+id/payAllChkBox"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM 0.00"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/payTotalText"
+            />
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/payTotalText"
+
+            android:text="@string/total"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/fee"
+            android:layout_toLeftOf="@+id/payTotalText"
+            android:layout_below="@+id/totalLabel"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/feeLabel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM 0.00"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/feesText"
+            android:layout_below="@+id/payTotalText"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/subtotal"
+            android:layout_toLeftOf="@+id/payTotalText"
+
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/feeLabel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RM 0.00"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/Red"
+            android:id="@+id/paySubTotalText"
+            android:layout_below="@+id/feeLabel"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/payNowButton"
+        android:text="@string/paynow"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/orange"
+       />
+
+</RelativeLayout>

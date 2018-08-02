@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/commentLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="fill_parent"
+        android:layout_height="535dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp">
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/remove"
+            android:background="@color/darkerGrey"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/whiteBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider3"
+            android:background="@color/White"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/divider2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_above="@id/divider2"
+            android:layout_marginBottom="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+
+
+        <EditText
+            android:id="@+id/comment_bar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/post"
+            android:layout_toRightOf="@+id/gallery"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/comment_here"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="17dp"/>
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="33dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/camera_icon" />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/camera"
+            android:clickable="true"
+            app:srcCompat="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Post"
+            android:textStyle="bold"
+            app:srcCompat="@drawable/send_icon" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/post"
+            android:background="@color/darkerGrey"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

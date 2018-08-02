@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent_back"
+    >
+
+
+    <ImageView
+        android:id="@+id/ratingImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange_round_square"
+        android:contentDescription="Rating Image"
+        android:padding="7dp"
+        android:src="@mipmap/ic_cart" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-65dp"
+    android:background="@drawable/white_round_square"
+    android:layout_below="@id/ratingImage"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+   >
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingMsg"
+        android:text="@string/prodReview"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackDialogItemName"
+        android:text="NMD R1"
+        android:textSize="20sp"
+        android:textColor="@color/titleTextColor"
+        android:layout_below="@+id/ratingMsg"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedbackDialogItemVariant"
+        android:textSize="20sp"
+        android:textColor="@color/titleTextColor"
+        android:text="Black"
+        android:layout_below="@+id/feedbackDialogItemName"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RatingBar
+        android:theme="@style/RatingBar"
+        android:rating="3"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/feedbackDialogItemVariant"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/feedbackDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_margin="20dp"
+        android:gravity="top"
+        android:hint="@string/desc"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLength="300"
+        android:maxLines="5"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedbackDescription"
+        android:text="word left"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/feedbackWordCount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/submit"
+        android:textSize="18sp"
+        android:layout_below="@+id/feedbackDescription"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/feedbackSubmit"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

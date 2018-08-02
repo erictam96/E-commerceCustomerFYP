@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:contentPadding="2dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="190dp">
+
+                <CheckBox android:id="@+id/checkOutChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="2dp"
+                    />
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorLightGray"
+
+                    android:id="@+id/cartVerticalLine"
+                    android:layout_toRightOf="@+id/checkOutChkBox"/>
+
+                <ImageView
+                    android:id="@+id/checkoutShopIcon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/cartVerticalLine"
+                    android:contentDescription="Shop Icon"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/shop_icon" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="shop name here"
+                    android:id="@+id/checkoutShopName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/checkoutShopIcon"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="status"
+                    android:id="@+id/checkoutItemStatus"
+                   android:textColor="@color/lightgreen"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="5dp"/>
+
+
+                <View android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/checkoutShopName"
+                    android:id="@+id/line_below_cartShopName"
+                    android:layout_toRightOf="@+id/cartVerticalLine"
+                    />
+
+                <ImageView
+                    android:id="@+id/CheckoutItemImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/line_below_cartShopName"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/cartVerticalLine"
+                    android:contentDescription="Product Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cart_icon" />
+
+                <TextView
+                    android:id="@+id/checkoutTxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/CheckoutItemImg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/CheckoutItemImg"
+                    android:layout_toRightOf="@+id/CheckoutItemImg"
+
+                    android:text="Title"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:lines="1"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:id="@+id/payVariantLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/CheckoutItemImg"
+                    android:layout_below="@+id/checkoutTxtTitle"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/variant2"
+                    />
+                <TextView
+                    android:id="@+id/payVariantText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/payVariantLable"
+                    android:layout_below="@+id/checkoutTxtTitle"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="asdasd"
+                    />
+
+
+                <TextView
+                    android:id="@+id/checkoutDiscountTxtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/payVariantLable"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/CheckoutItemImg"
+                    android:text="Price"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/checkoutDiscountTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/checkoutDiscountTxtPrice"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/CheckoutItemImg"
+                    android:text="-xx% off"
+                    android:textColor="@color/White"
+                    android:background="@drawable/red_circle"
+                    android:padding="3dp"
+                    />
+                <TextView
+                    android:id="@+id/checkoutTxtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/checkoutDiscountTxtPrice"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/checkoutDiscountTxt"
+                    android:text="Price"
+                    />
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/CheckoutItemImg"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/payqtylabel"
+                    android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/checkoutQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/payqtylabel"
+                        android:textAlignment="center"
+                        android:text="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+
+
+                        android:textSize="16sp"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/photo"
+    android:backgroundTint="@color/orange"
+    android:textColor="@color/White"
+    android:maxEms="10"
+    android:layout_below="@+id/CheckoutItemImg"
+    android:layout_toRightOf="@+id/cartVerticalLine"
+    android:id="@+id/viewRealPhotoBut"
+    android:layout_alignEnd="@+id/CheckoutItemImg"
+
+    />
+
+                <ImageButton
+                    android:id="@+id/delChkoutItemBut"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/transparentWhite"
+                    android:contentDescription="Delete Button"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/delete_icon" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="target_array">
+        <item>家具电器</item>
+        <item>汽车</item>
+        <item>包包</item>
+        <item>美容养生</item>
+        <item>文具</item>
+        <item>电子产品</item>
+        <item>饮食</item>
+        <item>家具</item>
+        <item>珠宝</item>
+        <item>时尚男装</item>
+        <item>手机平板</item>
+        <item>运动装备</item>
+        <item>鞋袜</item>
+        <item>电影彩卷</item>
+        <item>电竞游戏</item>>
+        <item>手表</item>
+        <item>时尚女装</item>
+        <item>其他分类</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>全部种类</item>
+        <item>家具电器</item>
+        <item>汽车</item>
+        <item>包包</item>
+        <item>美容养生</item>
+        <item>文具</item>
+        <item>电子产品</item>
+        <item>饮食</item>
+        <item>家具</item>
+        <item>珠宝</item>
+        <item>时尚男装</item>
+        <item>手机平板</item>
+        <item>运动装备</item>
+        <item>鞋袜</item>
+        <item>电影彩卷</item>
+        <item>电竞游戏</item>>
+        <item>手表</item>
+        <item>时尚女装</item>
+        <item>其他分类</item>
+    </string-array>
+
+    <string-array name="select_array">
+        <item>相机</item>
+        <item>游览相簿</item>
+        <item>取消</item>
+
+    </string-array>
+
+    <string-array name="condition_array1">
+        <item>所有</item>
+        <item>新品</item>
+        <item>二手货</item>
+    </string-array>
+
+    <string-array name="feedback_array">
+        <item>反馈</item>
+        <item>报销问题</item>
+        <item>轰炸或重伤贴文</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:id="@+id/sharelayout">
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/shareTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Share to"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/facebook_icon"
+                android:clickable="true"
+                android:text="Facebook"
+                android:layout_below="@+id/shareTo"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@+id/twitter"
+                android:layout_marginEnd="30dp"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:clickable="true"
+                android:src="@drawable/twitter_icon"
+                android:text="Twitter"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/shareTo"
+                android:layout_centerHorizontal="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/insta"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:clickable="true"
+                android:src="@drawable/instagram_icon"
+                android:text="Twitter"
+                android:layout_toRightOf="@+id/twitter"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/shareTo"
+                android:focusable="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-3-12  16:11:32"
+        android:layout_margin="5dp"
+        android:id="@+id/shortSellDate"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:text="Status"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/refundStatus"
+        />
+
+
+    <View android:layout_height="1dp"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/refundStatus"
+        android:id="@+id/line_below_refundDate"
+
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/refundImg"
+        android:layout_below="@+id/line_below_refundDate"
+        android:src="@drawable/photo"/>
+    <TextView
+        android:layout_below="@+id/line_below_refundDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/refundImg"
+        android:text="item xxx"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        android:id="@+id/refundItemName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:text="RM12.00"
+        android:layout_below="@id/refundItemName"
+        android:layout_toRightOf="@+id/refundImg"
+        android:id="@+id/refundPrice"
+        />
+</RelativeLayout></android.support.v7.widget.CardView>

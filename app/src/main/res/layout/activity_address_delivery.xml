@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecommerce.customer.fypproject.AddressDeliveryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+        android:id="@+id/addressDeliverytoolbar"
+        layout="@layout/default_toolbar"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressDeliverytoolbar"
+            android:layout_alignBottom="@+id/dropOffLabel"
+            android:id="@+id/dropOffChkBox"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/dropOffChkBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dedicateddropoffpoint"
+            android:layout_below="@+id/addressDeliverytoolbar"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:padding="10dp"
+            android:id="@+id/dropOffLabel"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/addressDeliverytoolbar"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_map"
+            />
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dropOffLabel"
+            android:id="@+id/line_below_dropOffLabel"
+            />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line_below_dropOffLabel"
+    android:id="@+id/spinnerRelative">
+
+    <Spinner
+        android:id="@+id/dropOffSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+
+        android:padding="10dp"
+
+        /></RelativeLayout>
+        <View android:layout_height="8dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/spinnerRelative"
+            android:id="@+id/line_below_dropOffSpinner"
+            android:visibility="invisible"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_dropOffSpinner"
+            android:layout_alignBottom="@+id/customeAddressLabel"
+            android:id="@+id/customeAddressChkBox"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:id="@+id/customeAddressLabel"
+            android:layout_below="@+id/line_below_dropOffSpinner"
+            android:text="@string/customeaddress"
+            android:layout_toRightOf="@+id/customeAddressChkBox"/>
+
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/customeAddressLabel"
+            android:id="@+id/line_below_customeAddressLabel"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_customeAddressLabel"
+            android:id="@+id/addressRecycleImg"
+            android:layout_above="@+id/line_below_addressRecycleView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/point_down"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/line_below_customeAddressLabel"
+            android:id="@+id/addressRecycleView"
+            android:layout_above="@+id/line_below_addressRecycleView"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="vertical"
+            android:clickable="true"
+            android:background="@drawable/ripple_effect"
+            android:visibility="invisible"
+            android:focusable="true" />
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/addAddressRelative"
+            android:id="@+id/line_below_addressRecycleView"
+            android:visibility="invisible"
+            />
+        <RelativeLayout
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addAddressRelative"
+            android:layout_above="@+id/line_below_addAddressRelativeView"
+            android:clickable="true"
+            android:background="@drawable/ripple_effect"
+            android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newaddress"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:id="@+id/addAddressText"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/ic_add_map"
+                android:layout_alignBottom="@+id/addAddressText"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+        <View android:layout_height="8dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/submitAddressBut"
+            android:id="@+id/line_below_addAddressRelativeView"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitAddressBut"
+            android:text="@string/submitaddress"
+           android:layout_above="@+id/remindText"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="@string/deliveryreminder"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:id="@+id/remindText"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="@string/deliveryMsg"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:id="@+id/extraText"
+            android:visibility="visible"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

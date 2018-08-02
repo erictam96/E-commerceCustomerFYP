@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View android:layout_height="10dp"
+        android:background="@color/colorLightGray"
+        android:layout_width="match_parent"
+
+    />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <View android:layout_height="1dp"
+            android:background="@color/colorLightGray"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/listlinear"
+            android:id="@+id/line_top"
+            android:layout_margin="5dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_top"
+            android:text="Estimated time of arrival : xxxx-xx-xx xx:xx"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+
+            android:textColor="@color/colorAccent"
+android:textStyle="bold"
+            android:id="@+id/ETAtext"
+            android:layout_marginBottom="8dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listlinear"
+
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+
+                android:text="2017/8/31 16:43:22"
+                android:id="@+id/orderdatetext"
+                android:textAlignment="center"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_alignParentEnd="true"
+                android:text="status"
+                android:id="@+id/stattext"
+                android:textAlignment="center"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <View android:layout_height="1dp"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/stattext"
+                android:id="@+id/line_below_status"
+                android:layout_margin="5dp"
+
+
+                />
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/orderlistPic"
+                android:layout_below="@+id/line_below_status"
+                android:src="@drawable/photo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:text="item"
+                android:id="@+id/itemText"
+                android:layout_below="@+id/line_below_status"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:layout_below="@+id/itemText"
+                android:text="qty"
+                android:id="@+id/qtylisttext"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:layout_below="@+id/qtylisttext"
+                android:text="variant"
+                android:id="@+id/vartext"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/orderlistPic"
+                android:layout_below="@+id/vartext"
+                android:text="seller"
+                android:id="@+id/sellertext"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/titleTextColor"
+                android:textStyle="bold"/>
+
+            <View android:layout_height="1dp"
+                android:background="@color/colorLightGray"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/sellertext"
+                android:id="@+id/line_above_collect_location"
+                android:layout_margin="5dp"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_above_collect_location"
+                android:id="@+id/destinationAddress"
+                android:text="collect location"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
