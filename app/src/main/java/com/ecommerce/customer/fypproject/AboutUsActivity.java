@@ -13,7 +13,7 @@ public class AboutUsActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-//34
+//
         Toolbar contenttoolbar = findViewById(R.id.aboutUsToolbar);
         setSupportActionBar(contenttoolbar);
         Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.aboutus);
