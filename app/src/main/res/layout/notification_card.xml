@@ -33,7 +33,7 @@
                 android:layout_height="80dp"
                 android:layout_centerVertical="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/cashierbooklogosmall"
+                android:src="@drawable/ecommercelogo_round"
                 />
 
             <TextView

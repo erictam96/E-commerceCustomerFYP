@@ -24,7 +24,7 @@
                 android:layout_height="70dp"
                 android:layout_centerVertical="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/cashierbooklogosmall"
+                android:src="@drawable/person_icon"
                 />
 
             <TextView

@@ -453,7 +453,7 @@ public class ManageOrderActivity extends AppCompatActivity {
         viewleft.setVisibility(View.GONE);
         viewright.setVisibility(View.GONE);
 
-        int id = getResources().getIdentifier("com.ecommerce.customer.fypproject:drawable/cashierbook_qr", null, null);
+        int id = getResources().getIdentifier("com.ecommerce.customer.fypproject:drawable/qr", null, null);
         viewImage.setImageResource(id);
         viewImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
 

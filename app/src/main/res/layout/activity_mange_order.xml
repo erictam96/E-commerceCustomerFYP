@@ -20,7 +20,7 @@
 
             android:layout_marginTop="20dp"
             android:id="@+id/QRcodeImg"
-            android:src="@drawable/cashierbook_qr"
+            android:src="@drawable/qr"
             android:autofillHints="not available yet"
             android:layout_marginBottom="10dp"
             tools:targetApi="o" />

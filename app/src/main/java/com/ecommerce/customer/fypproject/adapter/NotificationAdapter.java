@@ -89,8 +89,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                 .load(dataAdapterOBJ.getNotifyURL()) // image url
                 .transition(GenericTransitionOptions.with(android.R.anim.fade_in))
                 .apply(new RequestOptions()
-                        .placeholder(R.drawable.cashierbooklogosmall) // any placeholder to load at start
-                        .error(R.drawable.cashierbooklogosmall)  // any image in case of error
+                        .placeholder(R.drawable.notificationlogosmall) // any placeholder to load at start
+                        .error(R.drawable.notificationlogosmall)  // any image in case of error
                         .override(500, 500) // resizing
                         .centerCrop())
                 .into(Viewholder.notifyPic);

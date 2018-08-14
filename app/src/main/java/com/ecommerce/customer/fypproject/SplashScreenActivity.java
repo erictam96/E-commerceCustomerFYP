@@ -139,8 +139,7 @@ public class SplashScreenActivity extends Activity {
                         .show();
                 //send answer to crashlytic
                 Answers.getInstance().logLogin(new LoginEvent()
-                        .putSuccess(false)
-                        .putMethod(Objects.requireNonNull(Objects.requireNonNull(idpResponse).getError()).toString()));
+                        .putSuccess(false));
             }
         }else if(requestCode==1){
             Intent intent = getIntent();
@@ -235,7 +234,7 @@ public class SplashScreenActivity extends Activity {
         startActivityForResult(AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setTheme(R.style.LoginTheme)
-                .setLogo(R.drawable.cashierbookfontonly)
+                .setLogo(R.drawable.ecommercelogo)
                 .setIsSmartLockEnabled(false,true)
                 .setAvailableProviders(Arrays.asList(
                         new AuthUI.IdpConfig.EmailBuilder().build(),
