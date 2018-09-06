@@ -1,5 +1,5 @@
-# E-commerce Runner Android App FYP
-This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo and backend PHP is not published in Github. Thank you!
+# E-commerce Customer Android App FYP
+This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). For create new post in social media require to have purchase some item inside the platform first. You can refer to my github repo and backend PHP is not published in Github. Thank you!
 
 # Funtional Module
 - Social new feed (New Post, Comment, Share, Like)
