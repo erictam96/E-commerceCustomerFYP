@@ -163,7 +163,7 @@
     <string name="addingTocart">Adding item to cart</string>
     <string name="addingToCartBackground">Add to cart process running in background</string>
     <string name="itemAddedToCart">item added to cart</string>
-    <string name="exitMsg">Are you sure you want to exit Cashierbook?</string>
+    <string name="exitMsg">Are you sure you want to exit?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="prepareorderlist">Preparing your order list</string>

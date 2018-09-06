@@ -133,6 +133,7 @@ public class WritePostActivity extends AppCompatActivity implements View.OnClick
         postBtn = findViewById(R.id.btnPost);
 
         GetFirebaseAuth();
+
         mStorageRef = FirebaseStorage.getInstance().getReference("postpic");
         //mDatabaseRef = FirebaseDatabase.getInstance().getReference("postpic");
 
@@ -143,6 +144,8 @@ public class WritePostActivity extends AppCompatActivity implements View.OnClick
         Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.createpost);
 
         txtUserName.setText(udisplayname);
+        if (ContextCompat.checkSelfPermission(WritePostActivity.this,
+                Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
 
         postPic1.setOnClickListener(this);
         postPic2.setOnClickListener(this);
@@ -504,12 +507,13 @@ public class WritePostActivity extends AppCompatActivity implements View.OnClick
                         startActivityForResult(Intent.createChooser(intent,"Select Image From Camera"),img);
                     }
                 }else if(items[i].equals( "Gallery" )){
+                    if(!EnableRuntimePermission()){
                     //Intent to open gallery to select image
                     Intent intent = new Intent();
                     intent.setType("image/*");
                     intent.setAction(Intent.ACTION_GET_CONTENT);
                     img+=10;
-                    startActivityForResult(Intent.createChooser(intent, "Select Image From Gallery"), img);
+                    startActivityForResult(Intent.createChooser(intent, "Select Image From Gallery"), img);}
                 }else if (items[i].equals("Remove")){
                     //remove images and set boolean for check any changes
                     switch (img){
