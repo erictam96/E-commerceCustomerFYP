@@ -1,6 +1,12 @@
 # E-commerce Customer Android App FYP
 This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). For create new post in social media require to have purchase some item inside the platform first. You can refer to my github repo and give me your github ID for invitations for backend PHP code. Thank you!
 
+# Youtube Link
+Source Code Explanation
+https://youtu.be/mXxaPKRWa6I
+</br>App Demo
+https://youtu.be/BiTefBBHnVQ
+
 # Funtional Module
 - Social new feed (New Post, Comment, Share, Like)
 - Friends Module
